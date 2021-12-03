@@ -21,14 +21,14 @@ function reservation(event) {
     const dateObj = new Date(date);
     let formValid = true;
 
-    if (dateObj.getDay() === 6 || dateObj.getDay() === 0 || (dateObj.getMonth() === 11 && dateObj.getDate() > 24)) {
+    if (dateObj.getDay() === 5 || dateObj.getDay() === 6 || (dateObj.getMonth() === 11 && dateObj.getDate() >= 23)) {
         if (!(creditCardNum && creditCardName && creditCardExpMonth && creditCardExpYear)) {
             formValid = false;
         }
     }
 
     if (formValid) {
-        const table = tableSettings.find(table => table.value >= numOfPpl && !table.booked);
+        const table = tableSettings.find(table => parseInt(table.value) >= parseInt(numOfPpl) && !table.booked);
         let tables = [];
             
         if(!table) {
