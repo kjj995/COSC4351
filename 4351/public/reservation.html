@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+    <title>Restauraunt Home Page</title>
+</head>
+
+<body>
+
+    <div class="Reservation Page">
+        <h1>Restauraunt Name</h1>
+        <hr>
+    </div>
+
+    <div class="Reservation">
+        <form id="reservation-form" action="#">
+        <h2 class="heading heading-yellow">Reservation Online</h2>
+
+        <div class="res-field">
+            <p>Your Name</p>
+            <input type="text" placeholder="Your Name">
+        </div>
+
+        <div class="res-field">
+            <p>Your phone number</p>
+            <input type="tel" placeholder="Your phone number">
+        </div>
+
+        <div class="res-field">
+            <p>Your email</p>
+            <input type="text" placeholder="Your email">
+        </div>
+
+        <div class="res-field">
+            <p>Date</p>
+            <input type="date">
+        </div>
+
+        <div class="res-field">
+            <p>Time</p>
+            <input type="time">
+        </div>
+
+        <div class="res-field">
+            <p>How many people?</p>
+            <input name="num" placeholder="Number of people">
+        </div>
+        
+        <br>
+        <par>*Optional: Only required for </par>
+        <par>reservations on National Holidays or weekends</par>
+
+
+        <div class="reg-field">
+            <p>Credit Card Number*</p>
+            <input type="text" placeholder="Credit Card Number">
+        </div>  
+
+        <div class="reg-field">
+            <p>Credit Card Name*</p>
+            <input type="text" placeholder="Credit Card Name">
+        </div>
+      
+        <div class="reg-field">
+            <p>Credit Card Experation Month*</p>
+            <input type="text" placeholder="Credit Card Experation Month">
+        </div>
+
+        <div class="reg-field">
+            <p>Credit Card Experation Year*</p>
+            <input type="text" placeholder="Credit Card Experation Year">
+        </div>
+
+
+    
+        <br>
+        <div id= "error-msg"></div>
+        <br>
+        <button class="btn5" type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    </div>
+
+    
+    <script type="text/javascript" src="../src/reservation.js"></script>
+    <script type="text/javascript" src="../src/booking.js"></script>
+
+</body>
+
+</html>

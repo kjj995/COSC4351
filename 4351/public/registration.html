@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="Registration Page">
+        <h1>Restauraunt Name</h1>
+        <hr>
+    </div>
+
+    <div class="Registration">
+        <form id="registration-form" action="#">
+            <h2 class="heading heading-yellow">Guest Registration</h2>
+
+            <div class="reg-field">
+                <p>User Name</p>
+                <input type="text" placeholder="Name">
+            </div>
+
+            <div class="reg-field">
+                <p>Password</p>
+                <input type="text" placeholder="Password">
+            </div>
+
+            <div class="reg-field">
+                <p>Mailing Address</p>
+                <input type="text" placeholder="Mailing Address">
+            </div>
+
+            <div class="reg-field">
+                <p>Billing Address</p>
+                <input type="text" placeholder="Billing Address">
+            </div>
+
+            <div class="reg-field">
+                <p>Preffered Diner Number</p>
+                <input type="number" placeholder="Diner Number">
+            </div>
+
+            <div class="reg-field">
+                <p>Preffered Payment Option</p>
+                <input type="radio" id="cash" name="Preffered Payment Method" value="CASH">
+                <label for="cash">Cash</label>
+
+                <input type="radio" id="credit" name="Preffered Payment Method" value="CREDIT">
+                <label for="credit">Credit</label>
+
+                <input type="radio" id="check" name="Preffered Payment Method" value="CHECK">
+                <label for="check">Check</label>
+            </div>
+
+            <br>
+            <!--<a href="reservation.html"></a> !-->
+            <button class="btn4" type="submit">Register</button>
+            <br>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="../src/register.js"></script>
+    <script type="text/javascript" src="../src/user.js"></script>
+</body>
+
+</html>
